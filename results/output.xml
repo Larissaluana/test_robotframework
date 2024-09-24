@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.3 on win32)" generated="2024-09-23T14:41:24.794643" rpa="false" schemaversion="5">
+<suite id="s1" name="Web Automathion Suite" source="C:\CloneGIT\test_robotframework\Suite\web_automathion_suite.robot">
+<test id="s1-t1" name="CT01: Acessa ao menu &quot;WOMEN&quot;" line="15">
+<kw name="Abrir o Navegador" owner="web_automathion_functions" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:41:26.605977" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-23T14:41:26.603976" elapsed="5.262016"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-09-23T14:41:31.866984" elapsed="0.131800"/>
+</kw>
+<status status="PASS" start="2024-09-23T14:41:26.596986" elapsed="5.401798"/>
+</kw>
+<kw name="Dado que estou na home page do site www.automationpractice.pl/index.php" owner="web_automathion_steps">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:41:32.019746" level="INFO">Opening url 'http://www.automationpractice.pl/index.php'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-09-23T14:41:32.018746" elapsed="7.499342"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-23T14:41:49.520663" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-23T14:41:39.519090" elapsed="10.001573"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${LOGO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-23T14:41:49.521663" elapsed="0.135781"/>
+</kw>
+<status status="PASS" start="2024-09-23T14:41:32.017752" elapsed="17.639692"/>
+</kw>
+<kw name="Quando acessar o menu &quot;Women&quot;" owner="web_automathion_steps">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:41:49.662434" level="INFO">Clicking element '//a[contains(@title,'Women')]'.</msg>
+<arg>${WOMEN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T14:41:49.661441" elapsed="3.760101"/>
+</kw>
+<status status="PASS" start="2024-09-23T14:41:49.660439" elapsed="3.761103"/>
+</kw>
+<kw name="Então o slide da pagina deve ficar &quot;WOMEN&quot;" owner="web_automathion_steps">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SLIDE}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-23T14:41:53.430527" elapsed="0.207675"/>
+</kw>
+<status status="PASS" start="2024-09-23T14:41:53.428531" elapsed="0.210666"/>
+</kw>
+<kw name="E Verificar se aparece o produto &quot;Blouse&quot;" owner="web_automathion_steps">
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${LOCALIZADOR}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-09-23T14:41:53.648190" elapsed="0.774776"/>
+</kw>
+<status status="PASS" start="2024-09-23T14:41:53.647185" elapsed="0.776779"/>
+</kw>
+<doc>Esse teste verificar o menu Women no site http://www.automationpractice.pl/index.php
+e o produto Blouse</doc>
+<tag>menu_produto</tag>
+<status status="PASS" start="2024-09-23T14:41:26.588001" elapsed="27.872906"/>
+</test>
+<test id="s1-t2" name="CT02: Pesquisa de um produto" line="24">
+<kw name="Abrir o Navegador" owner="web_automathion_functions" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:41:54.609676" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-23T14:41:54.607678" elapsed="6.682662"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-09-23T14:42:01.291341" elapsed="0.272569"/>
+</kw>
+<status status="PASS" start="2024-09-23T14:41:54.599690" elapsed="6.965220"/>
+</kw>
+<kw name="Dado que estou na home page do site www.automationpractice.pl/index.php" owner="web_automathion_steps">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:42:01.615838" level="INFO">Opening url 'http://www.automationpractice.pl/index.php'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-09-23T14:42:01.614831" elapsed="8.718383"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-23T14:42:20.345621" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-23T14:42:10.334208" elapsed="10.012408"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${LOGO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-23T14:42:20.347615" elapsed="0.191701"/>
+</kw>
+<status status="PASS" start="2024-09-23T14:42:01.612839" elapsed="18.927477"/>
+</kw>
+<kw name="Quando digitar pelo produto &quot;Blouse&quot;" owner="web_automathion_steps" source_name="Quando digitar pelo produto &quot;${PRODUTO}&quot;">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:42:20.548300" level="INFO">Typing text 'Blouse' into text field 'search_query_top'.</msg>
+<arg>search_query_top</arg>
+<arg>${PRODUTO}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T14:42:20.547303" elapsed="0.964488"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:42:21.513789" level="INFO">Clicking button '//button[@type='submit'][contains(.,'Search')]'.</msg>
+<arg>${BOTÃO_PESQUISA}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T14:42:21.512789" elapsed="2.433411"/>
+</kw>
+<status status="PASS" start="2024-09-23T14:42:20.545310" elapsed="3.401891"/>
+</kw>
+<kw name="Então a pagina seleciona os TOP SELLERS da categoria" owner="web_automathion_steps">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:42:23.954182" level="INFO">Clicking element '//a[contains(@title,'View a top sellers products')]'.</msg>
+<arg>${TOP_SELLERS}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T14:42:23.953190" elapsed="1.872004"/>
+</kw>
+<status status="PASS" start="2024-09-23T14:42:23.951192" elapsed="1.874997"/>
+</kw>
+<kw name="E um produto da linha &quot;Blouse&quot; deve ser mostrado na página" owner="web_automathion_steps" source_name="E um produto da linha &quot;${PRODUTO}&quot; deve ser mostrado na página">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=(//h5[contains(.,'${PRODUTO}')])[1]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-23T14:42:25.830320" elapsed="0.111962"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:42:25.944278" level="INFO">Clicking element '(//img[contains(@class,'replace-2x img-responsive')])[1]'.</msg>
+<arg>locator=(//img[contains(@class,'replace-2x img-responsive')])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T14:42:25.943281" elapsed="2.895756"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:42:29.024746" level="INFO">Element '//img[contains(@height,'458')]' is displayed.</msg>
+<arg>locator=//img[contains(@height,'458')]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-23T14:42:28.840035" elapsed="0.184711"/>
+</kw>
+<status status="PASS" start="2024-09-23T14:42:25.828182" elapsed="3.197564"/>
+</kw>
+<doc>Esse teste verifica a busca de um produto</doc>
+<tag>busca_produtos</tag>
+<status status="PASS" start="2024-09-23T14:41:54.583712" elapsed="34.466995"/>
+</test>
+<test id="s1-t3" name="CT03: Cadastrar um Novo Usuario" line="32">
+<kw name="Abrir o Navegador" owner="web_automathion_functions" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:42:29.074668" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-23T14:42:29.072673" elapsed="9.881492"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-09-23T14:42:38.956163" elapsed="0.330477"/>
+</kw>
+<status status="PASS" start="2024-09-23T14:42:29.071673" elapsed="10.216965"/>
+</kw>
+<kw name="Dado que estou na home page do site www.automationpractice.pl/index.php" owner="web_automathion_steps">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:42:39.306612" level="INFO">Opening url 'http://www.automationpractice.pl/index.php'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-09-23T14:42:39.305612" elapsed="8.451736"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-23T14:42:57.764391" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-23T14:42:47.758348" elapsed="10.007042"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${LOGO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-23T14:42:57.768396" elapsed="0.128795"/>
+</kw>
+<status status="PASS" start="2024-09-23T14:42:39.304614" elapsed="18.593565"/>
+</kw>
+<kw name="Quando inserir um email para usuário novo" owner="web_automathion_steps">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:42:57.902173" level="INFO">Clicking element '//a[contains(@class,'login')]'.</msg>
+<arg>${LOGIN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T14:42:57.901175" elapsed="2.829714"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-09-23T14:43:00.733886" level="INFO">${palavra_aleatoria} = Aoabv</msg>
+<var>${palavra_aleatoria}</var>
+<arg>length=5</arg>
+<arg>chars=[LETTERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-09-23T14:43:00.731889" elapsed="0.001997"/>
+</kw>
+<kw name="Convert To Lower Case" owner="String">
+<msg time="2024-09-23T14:43:00.735878" level="INFO">${palavra_aleatoria} = aoabv</msg>
+<var>${palavra_aleatoria}</var>
+<arg>${palavra_aleatoria}</arg>
+<doc>Converts string to lower case.</doc>
+<status status="PASS" start="2024-09-23T14:43:00.734883" elapsed="0.001996"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2024-09-23T14:43:00.742865" level="INFO">${EMAIL_TESTE} = aoabv@emailteste.com</msg>
+<arg>${EMAIL_TESTE}</arg>
+<arg>${palavra_aleatoria}@emailteste.com</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2024-09-23T14:43:00.737877" elapsed="0.005990"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:43:00.745864" level="INFO">Typing text 'aoabv@emailteste.com' into text field 'email_create'.</msg>
+<arg>email_create</arg>
+<arg>${EMAIL_TESTE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T14:43:00.744863" elapsed="1.179252"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:43:01.925169" level="INFO">Clicking element '//span[contains(.,'Create an account')]'.</msg>
+<arg>${CREATE_AN_ACCOUNT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T14:43:01.924115" elapsed="0.390312"/>
+</kw>
+<status status="PASS" start="2024-09-23T14:42:57.900179" elapsed="4.415240"/>
+</kw>
+<kw name="Então conferir se &quot;Create an account&quot; está na pagina" owner="web_automathion_steps">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${IMAGEM_CREATE}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-23T14:43:02.325412" elapsed="1.277931"/>
+</kw>
+<status status="PASS" start="2024-09-23T14:43:02.323408" elapsed="1.280941"/>
+</kw>
+<kw name="E preencher os campos obrigatorios &quot;First Name, Last Name, Password&quot;" owner="web_automathion_steps">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-23T14:43:08.617457" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-23T14:43:03.616320" elapsed="5.001137"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:43:08.619455" level="INFO">Clicking element 'id_gender2'.</msg>
+<arg>${GENDER}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T14:43:08.618458" elapsed="0.275562"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:43:08.896019" level="INFO">Typing text 'MARIA' into text field 'customer_firstname'.</msg>
+<arg>customer_firstname</arg>
+<arg>${NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T14:43:08.895020" elapsed="0.460280"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:43:09.357294" level="INFO">Typing text 'SILVA' into text field 'customer_lastname'.</msg>
+<arg>customer_lastname</arg>
+<arg>${LASTE_NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T14:43:09.356304" elapsed="0.499209"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:43:09.857507" level="INFO">Typing password into text field 'passwd'.</msg>
+<msg time="2024-09-23T14:43:10.013272" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>passwd</arg>
+<arg>${PASSWD}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T14:43:09.856511" elapsed="0.484245"/>
+</kw>
+<kw name="Double Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:43:10.342747" level="INFO">Double clicking element '//select[contains(@name,'months')]'.</msg>
+<arg>${MONTHS}</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T14:43:10.341750" elapsed="0.667205"/>
+</kw>
+<kw name="Double Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:43:11.012948" level="INFO">Double clicking element '//select[contains(@name,'years')]'.</msg>
+<arg>${YEAR}</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T14:43:11.009953" elapsed="0.757368"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:43:11.769310" level="INFO">Clicking element '//span[contains(.,'Register')]'.</msg>
+<arg>${CONCLUIR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T14:43:11.768314" elapsed="3.755276"/>
+</kw>
+<status status="PASS" start="2024-09-23T14:43:03.614329" elapsed="11.909261"/>
+</kw>
+<kw name="E verificar se o novo usuario foi cadastrado com sucesso" owner="web_automathion_steps">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${BTN_ACCOUNT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-23T14:43:15.555540" elapsed="0.262589"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-23T14:43:15.820124" level="INFO">Your account has been created.</msg>
+<arg>Your account has been created.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-23T14:43:15.820124" elapsed="0.000997"/>
+</kw>
+<status status="PASS" start="2024-09-23T14:43:15.551547" elapsed="0.269574"/>
+</kw>
+<doc>Esse teste verifica o cadastro de um novo usuario</doc>
+<tag>cadastro_novo</tag>
+<status status="PASS" start="2024-09-23T14:42:29.068678" elapsed="46.762433"/>
+</test>
+<test id="s1-t4" name="CT04: Completar cadastro do Novo usuario com informações adicionais" line="41">
+<kw name="Abrir o Navegador" owner="web_automathion_functions" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:43:15.926959" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-23T14:43:15.922966" elapsed="10.536645"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-09-23T14:43:26.460606" elapsed="0.150766"/>
+</kw>
+<status status="PASS" start="2024-09-23T14:43:15.920969" elapsed="10.690403"/>
+</kw>
+<kw name="Dado que estou na home page do site www.automationpractice.pl/index.php" owner="web_automathion_steps">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:43:26.664287" level="INFO">Opening url 'http://www.automationpractice.pl/index.php'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-09-23T14:43:26.663291" elapsed="9.825581"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-23T14:43:46.492170" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-23T14:43:36.489869" elapsed="10.002301"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${LOGO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-23T14:43:46.494168" elapsed="0.150764"/>
+</kw>
+<status status="PASS" start="2024-09-23T14:43:26.662294" elapsed="19.982638"/>
+</kw>
+<kw name="Quando inserir um email para usuário novo" owner="web_automathion_steps">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:43:46.651921" level="INFO">Clicking element '//a[contains(@class,'login')]'.</msg>
+<arg>${LOGIN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T14:43:46.649928" elapsed="2.682789"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-09-23T14:43:49.334710" level="INFO">${palavra_aleatoria} = tzajw</msg>
+<var>${palavra_aleatoria}</var>
+<arg>length=5</arg>
+<arg>chars=[LETTERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-09-23T14:43:49.333712" elapsed="0.002000"/>
+</kw>
+<kw name="Convert To Lower Case" owner="String">
+<msg time="2024-09-23T14:43:49.337705" level="INFO">${palavra_aleatoria} = tzajw</msg>
+<var>${palavra_aleatoria}</var>
+<arg>${palavra_aleatoria}</arg>
+<doc>Converts string to lower case.</doc>
+<status status="PASS" start="2024-09-23T14:43:49.336706" elapsed="0.000999"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2024-09-23T14:43:49.345694" level="INFO">${EMAIL_TESTE} = tzajw@emailteste.com</msg>
+<arg>${EMAIL_TESTE}</arg>
+<arg>${palavra_aleatoria}@emailteste.com</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2024-09-23T14:43:49.338707" elapsed="0.006987"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:43:49.347689" level="INFO">Typing text 'tzajw@emailteste.com' into text field 'email_create'.</msg>
+<arg>email_create</arg>
+<arg>${EMAIL_TESTE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T14:43:49.346691" elapsed="1.275998"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:43:50.625685" level="INFO">Clicking element '//span[contains(.,'Create an account')]'.</msg>
+<arg>${CREATE_AN_ACCOUNT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T14:43:50.623689" elapsed="0.385394"/>
+</kw>
+<status status="PASS" start="2024-09-23T14:43:46.647929" elapsed="4.362151"/>
+</kw>
+<kw name="E preencher os campos obrigatorios &quot;First Name, Last Name, Password&quot;" owner="web_automathion_steps">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-23T14:43:56.019449" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-23T14:43:51.019067" elapsed="5.000382"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:43:56.021444" level="INFO">Clicking element 'id_gender2'.</msg>
+<arg>${GENDER}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T14:43:56.020447" elapsed="0.257599"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:43:56.280037" level="INFO">Typing text 'MARIA' into text field 'customer_firstname'.</msg>
+<arg>customer_firstname</arg>
+<arg>${NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T14:43:56.279041" elapsed="0.447299"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:43:56.728340" level="INFO">Typing text 'SILVA' into text field 'customer_lastname'.</msg>
+<arg>customer_lastname</arg>
+<arg>${LASTE_NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T14:43:56.727341" elapsed="0.487234"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:43:57.216581" level="INFO">Typing password into text field 'passwd'.</msg>
+<msg time="2024-09-23T14:43:57.414262" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>passwd</arg>
+<arg>${PASSWD}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T14:43:57.215573" elapsed="0.512197"/>
+</kw>
+<kw name="Double Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:43:57.730765" level="INFO">Double clicking element '//select[contains(@name,'months')]'.</msg>
+<arg>${MONTHS}</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T14:43:57.729773" elapsed="0.799743"/>
+</kw>
+<kw name="Double Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:43:58.531516" level="INFO">Double clicking element '//select[contains(@name,'years')]'.</msg>
+<arg>${YEAR}</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T14:43:58.530510" elapsed="0.848670"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:43:59.381171" level="INFO">Clicking element '//span[contains(.,'Register')]'.</msg>
+<arg>${CONCLUIR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T14:43:59.380176" elapsed="2.344324"/>
+</kw>
+<status status="PASS" start="2024-09-23T14:43:51.017071" elapsed="10.707429"/>
+</kw>
+<kw name="E verificar se o novo usuario foi cadastrado com sucesso" owner="web_automathion_steps">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${BTN_ACCOUNT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-23T14:44:01.728497" elapsed="0.137785"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-23T14:44:01.869270" level="INFO">Your account has been created.</msg>
+<arg>Your account has been created.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-23T14:44:01.868274" elapsed="0.000996"/>
+</kw>
+<status status="PASS" start="2024-09-23T14:44:01.727497" elapsed="0.142772"/>
+</kw>
+<kw name="Então adicionar Endereço, Bairro, Cidade, Cep, Estado e Telefone" owner="web_automathion_steps">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:44:01.875259" level="INFO">Clicking element '//span[contains(.,'Add my first address')]'.</msg>
+<arg>${ADD_MY_ADRESS}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T14:44:01.874261" elapsed="1.972626"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:44:03.848884" level="INFO">Typing text 'Rua:UM' into text field 'address1'.</msg>
+<arg>address1</arg>
+<arg>text=Rua:UM</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T14:44:03.847886" elapsed="0.704890"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:44:04.554772" level="INFO">Typing text 'Guarulhos' into text field 'city'.</msg>
+<arg>city</arg>
+<arg>text=Guarulhos</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T14:44:04.553775" elapsed="0.655974"/>
+</kw>
+<kw name="Double Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:44:05.211752" level="INFO">Double clicking element 'id_state'.</msg>
+<arg>id_state</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T14:44:05.210754" elapsed="1.113245"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:44:06.326994" level="INFO">Typing text '22222' into text field 'postcode'.</msg>
+<arg>postcode</arg>
+<arg>text=22222</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T14:44:06.325001" elapsed="0.598059"/>
+</kw>
+<kw name="Double Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:44:06.925060" level="INFO">Double clicking element 'id_country'.</msg>
+<arg>id_country</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T14:44:06.924060" elapsed="0.745824"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:44:07.671880" level="INFO">Typing text '1111111111' into text field 'phone'.</msg>
+<arg>phone</arg>
+<arg>text=1111111111</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T14:44:07.670883" elapsed="0.589078"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:44:08.261954" level="INFO">Typing text '3333333333' into text field 'phone_mobile'.</msg>
+<arg>phone_mobile</arg>
+<arg>text=3333333333</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T14:44:08.260956" elapsed="0.694910"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:44:08.958863" level="INFO">Clicking element '//span[contains(.,'Save')]'.</msg>
+<arg>${SAVE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T14:44:08.957868" elapsed="2.118995"/>
+</kw>
+<status status="PASS" start="2024-09-23T14:44:01.872266" elapsed="9.205592"/>
+</kw>
+<kw name="E verificar se completou o cadastro do usuario" owner="web_automathion_steps">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-23T14:44:11.087842" level="INFO">Your addresses are listed below.</msg>
+<arg>Your addresses are listed below.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-23T14:44:11.086844" elapsed="0.001995"/>
+</kw>
+<status status="PASS" start="2024-09-23T14:44:11.085848" elapsed="0.003992"/>
+</kw>
+<doc>Esse teste adiciona informações adicionais ao novo usuario</doc>
+<tag>informações_adicionais</tag>
+<status status="PASS" start="2024-09-23T14:43:15.917973" elapsed="55.176857"/>
+</test>
+<test id="s1-t5" name="CT05: Deixa o cadastro do usuario incompleto e sinalizar erro" line="51">
+<kw name="Abrir o Navegador" owner="web_automathion_functions" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:44:11.107809" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-23T14:44:11.106810" elapsed="7.315524"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-09-23T14:44:18.423333" elapsed="0.268576"/>
+</kw>
+<status status="PASS" start="2024-09-23T14:44:11.103817" elapsed="7.589086"/>
+</kw>
+<kw name="Dado que estou na home page do site www.automationpractice.pl/index.php" owner="web_automathion_steps">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:44:18.699899" level="INFO">Opening url 'http://www.automationpractice.pl/index.php'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-09-23T14:44:18.698899" elapsed="2.065757"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-23T14:44:30.769485" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-23T14:44:20.765653" elapsed="10.004829"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${LOGO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-23T14:44:30.771480" elapsed="0.249610"/>
+</kw>
+<status status="PASS" start="2024-09-23T14:44:18.697907" elapsed="12.324180"/>
+</kw>
+<kw name="Quando inserir um email para usuário novo" owner="web_automathion_steps">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:44:31.039059" level="INFO">Clicking element '//a[contains(@class,'login')]'.</msg>
+<arg>${LOGIN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T14:44:31.038062" elapsed="2.687858"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-09-23T14:44:33.728921" level="INFO">${palavra_aleatoria} = MXPSV</msg>
+<var>${palavra_aleatoria}</var>
+<arg>length=5</arg>
+<arg>chars=[LETTERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-09-23T14:44:33.726928" elapsed="0.001993"/>
+</kw>
+<kw name="Convert To Lower Case" owner="String">
+<msg time="2024-09-23T14:44:33.730917" level="INFO">${palavra_aleatoria} = mxpsv</msg>
+<var>${palavra_aleatoria}</var>
+<arg>${palavra_aleatoria}</arg>
+<doc>Converts string to lower case.</doc>
+<status status="PASS" start="2024-09-23T14:44:33.729915" elapsed="0.001002"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2024-09-23T14:44:33.737902" level="INFO">${EMAIL_TESTE} = mxpsv@emailteste.com</msg>
+<arg>${EMAIL_TESTE}</arg>
+<arg>${palavra_aleatoria}@emailteste.com</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2024-09-23T14:44:33.731913" elapsed="0.005989"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:44:33.740897" level="INFO">Typing text 'mxpsv@emailteste.com' into text field 'email_create'.</msg>
+<arg>email_create</arg>
+<arg>${EMAIL_TESTE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T14:44:33.739901" elapsed="1.090242"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:44:34.834136" level="INFO">Clicking element '//span[contains(.,'Create an account')]'.</msg>
+<arg>${CREATE_AN_ACCOUNT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T14:44:34.833137" elapsed="0.426047"/>
+</kw>
+<status status="PASS" start="2024-09-23T14:44:31.036064" elapsed="4.224117"/>
+</kw>
+<kw name="E não preencher os dados obrigatorios corretamente" owner="web_automathion_steps">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-23T14:44:40.271956" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-23T14:44:35.270170" elapsed="5.001786"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:44:40.274952" level="INFO">Clicking element 'id_gender2'.</msg>
+<arg>${GENDER}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T14:44:40.273950" elapsed="0.261132"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:44:40.537086" level="INFO">Typing text 'MARIA' into text field 'customer_firstname'.</msg>
+<arg>customer_firstname</arg>
+<arg>${NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T14:44:40.536086" elapsed="0.513725"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:44:41.052800" level="INFO">Typing text 'SILVA' into text field 'customer_lastname'.</msg>
+<arg>customer_lastname</arg>
+<arg>${LASTE_NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T14:44:41.050803" elapsed="0.557130"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:44:41.611928" level="INFO">Clicking element '//span[contains(.,'Register')]'.</msg>
+<arg>${CONCLUIR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T14:44:41.609927" elapsed="2.064167"/>
+</kw>
+<status status="PASS" start="2024-09-23T14:44:35.265172" elapsed="8.409919"/>
+</kw>
+<kw name="Então retorna o aviso para preencher campos obrigatorios" owner="web_automathion_steps">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-23T14:44:43.680083" level="INFO">passwd is required</msg>
+<arg>passwd is required</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-23T14:44:43.680083" elapsed="0.001002"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-23T14:44:43.683082" level="INFO">Required field</msg>
+<arg>Required field</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-23T14:44:43.682085" elapsed="0.001997"/>
+</kw>
+<status status="PASS" start="2024-09-23T14:44:43.678089" elapsed="0.006988"/>
+</kw>
+<doc>Esse teste verifica o erro ao salvar cadastro sem preencher campos obrigatorios</doc>
+<tag>erro_cadastro</tag>
+<status status="PASS" start="2024-09-23T14:44:11.100823" elapsed="32.585250"/>
+</test>
+<test id="s1-t6" name="robot -t &quot;Caso de Teste 06: Entrar em contato com o suporte do site Automation&quot; &quot;Suiteweb_automathion_suite.robot" line="59">
+<status status="FAIL" start="2024-09-23T14:44:43.690066" elapsed="0.003997">Test cannot be empty.</status>
+</test>
+<test id="s1-t7" name="CT06: Entrar em contato com o suporte do site Automation" line="61">
+<kw name="Abrir o Navegador" owner="web_automathion_functions" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:44:43.707040" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-23T14:44:43.705046" elapsed="7.198007"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-09-23T14:44:50.904047" elapsed="0.274569"/>
+</kw>
+<status status="PASS" start="2024-09-23T14:44:43.704049" elapsed="7.475568"/>
+</kw>
+<kw name="Dado que estou na home page do site www.automationpractice.pl/index.php" owner="web_automathion_steps">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:44:51.189597" level="INFO">Opening url 'http://www.automationpractice.pl/index.php'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-09-23T14:44:51.188599" elapsed="2.125008"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-23T14:45:03.317732" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-23T14:44:53.315599" elapsed="10.002133"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${LOGO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-23T14:45:03.318735" elapsed="0.098625"/>
+</kw>
+<status status="PASS" start="2024-09-23T14:44:51.186603" elapsed="12.230757"/>
+</kw>
+<kw name="Quando entro na opção de contatar o suporte do site" owner="web_automathion_steps">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:45:03.421351" level="INFO">Clicking element '//a[contains(@title,'Contact us')]'.</msg>
+<arg>${SUPORTE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T14:45:03.420357" elapsed="2.981006"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${CONFIRMA}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-23T14:45:06.403359" elapsed="0.163744"/>
+</kw>
+<status status="PASS" start="2024-09-23T14:45:03.419357" elapsed="3.148743"/>
+</kw>
+<kw name="E inserir emaiL, assunto e mensagem" owner="web_automathion_steps">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:45:06.581081" level="INFO">Clicking element 'id_contact'.</msg>
+<arg>id_contact</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T14:45:06.580082" elapsed="0.628015"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-09-23T14:45:07.211091" level="INFO">${PALAVRA_EMAIL} = mMNro</msg>
+<var>${PALAVRA_EMAIL}</var>
+<arg>length=5</arg>
+<arg>chars=[LETTERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-09-23T14:45:07.209094" elapsed="0.001997"/>
+</kw>
+<kw name="Convert To Lower Case" owner="String">
+<msg time="2024-09-23T14:45:07.213089" level="INFO">${PALAVRA_EMAIL} = mmnro</msg>
+<var>${PALAVRA_EMAIL}</var>
+<arg>${PALAVRA_EMAIL}</arg>
+<doc>Converts string to lower case.</doc>
+<status status="PASS" start="2024-09-23T14:45:07.212090" elapsed="0.000999"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2024-09-23T14:45:07.220079" level="INFO">${EMAIL_SUPORTE} = mmnro@emailteste.com</msg>
+<arg>${EMAIL_SUPORTE}</arg>
+<arg>${PALAVRA_EMAIL}@emailteste.com</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2024-09-23T14:45:07.214087" elapsed="0.006989"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:45:07.223073" level="INFO">Typing text 'mmnro@emailteste.com' into text field 'email'.</msg>
+<arg>email</arg>
+<arg>${EMAIL_SUPORTE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T14:45:07.222078" elapsed="1.107258"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:45:08.336326" level="INFO">Typing text 'TESTE' into text field 'id_order'.</msg>
+<arg>id_order</arg>
+<arg>TESTE</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T14:45:08.330335" elapsed="0.828704"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:45:09.161034" level="INFO">Typing text 'TESTE' into text field 'message'.</msg>
+<arg>message</arg>
+<arg>TESTE</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T14:45:09.160034" elapsed="1.168168"/>
+</kw>
+<status status="PASS" start="2024-09-23T14:45:06.578085" elapsed="3.751120"/>
+</kw>
+<kw name="Então enviar a mensagem ao suporte após apertar o botão Send e confirma se foi enviado com sucesso" owner="web_automathion_steps">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-23T14:45:10.397096" level="INFO">Clicking element '//span[contains(.,'Send')]'.</msg>
+<arg>${SEND}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T14:45:10.396095" elapsed="2.196552"/>
+</kw>
+<status status="PASS" start="2024-09-23T14:45:10.394100" elapsed="2.199559"/>
+</kw>
+<doc>Esse teste verifica o contato com suporte</doc>
+<tag>contato_suporte</tag>
+<status status="PASS" start="2024-09-23T14:44:43.700050" elapsed="28.896591"/>
+</test>
+<status status="FAIL" start="2024-09-23T14:41:24.802632" elapsed="227.803003"/>
+</suite>
+<statistics>
+<total>
+<stat pass="6" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">busca_produtos</stat>
+<stat pass="1" fail="0" skip="0">cadastro_novo</stat>
+<stat pass="1" fail="0" skip="0">contato_suporte</stat>
+<stat pass="1" fail="0" skip="0">erro_cadastro</stat>
+<stat pass="1" fail="0" skip="0">informações_adicionais</stat>
+<stat pass="1" fail="0" skip="0">menu_produto</stat>
+</tag>
+<suite>
+<stat pass="6" fail="1" skip="0" id="s1" name="Web Automathion Suite">Web Automathion Suite</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-09-23T14:41:26.436240" level="ERROR">Error in file 'C:\CloneGIT\test_robotframework\Functions\web_automathion_functions.robot' on line 5: Importing library 'RequestsLibrary' failed: ModuleNotFoundError: No module named 'RequestsLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\Maria Luiza\AppData\Local\Programs\Python\Python312\Scripts\robot.exe
+  C:\Users\Maria Luiza\AppData\Local\Programs\Python\Python312\python312.zip
+  C:\Users\Maria Luiza\AppData\Local\Programs\Python\Python312\DLLs
+  C:\Users\Maria Luiza\AppData\Local\Programs\Python\Python312\Lib
+  C:\Users\Maria Luiza\AppData\Local\Programs\Python\Python312
+  C:\Users\Maria Luiza\AppData\Local\Programs\Python\Python312\Lib\site-packages</msg>
+</errors>
+</robot>

@@ -4,7 +4,7 @@ Library        SeleniumLibrary
 Library        String
 Library        RequestsLibrary
 Library        Collections
-# Library        FakerLibrary
+
 Resource      ../PageObjects/web_automathion_page.robot
 Resource      ../Steps/web_automathion_steps.robot
 
@@ -16,4 +16,4 @@ Abrir o Navegador
 
 Fechar o navegador
     Capture Page Screenshot
-    Close Browser
+    Close Browser  

@@ -75,7 +75,7 @@ E não preencher os dados obrigatorios corretamente
     Click Element     ${GENDER}
     Input Text        customer_firstname      ${NAME}
     Input Text        customer_lastname       ${LASTE_NAME}
-    Click Element     {CONCLUIR}
+    Click Element     ${CONCLUIR}
     
 Então retorna o aviso para preencher campos obrigatorios
     Log          passwd is required
@@ -94,5 +94,6 @@ E inserir emaiL, assunto e mensagem
     Input Text            id_order                 TESTE
     Input Text            message                  TESTE
 
-Então enviar a mensagem ao suporte após apertar o botão "Send"
+Então enviar a mensagem ao suporte após apertar o botão Send e confirma se foi enviado com sucesso
     Click Element        ${SEND}
+

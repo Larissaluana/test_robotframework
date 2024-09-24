@@ -12,6 +12,7 @@ Test Setup               Abrir o Navegador
 # Test Teardown            Fechar o navegador    
 
 *** Test Cases ***
+robot -t "CT01: Acessa ao menu "WOMEN"" "Suite\web_automathion_suite.robot"
 CT01: Acessa ao menu "WOMEN"
     [Documentation]     Esse teste verificar o menu Women no site http://www.automationpractice.pl/index.php
 ...                     e o produto Blouse     
@@ -21,6 +22,7 @@ CT01: Acessa ao menu "WOMEN"
     Então o slide da pagina deve ficar "WOMEN"
     E Verificar se aparece o produto "Blouse"
 
+robot -t "CT02: Pesquisa de um produto" "Suite\web_automathion_suite.robot"
 CT02: Pesquisa de um produto 
     [Documentation]         Esse teste verifica a busca de um produto
     [Tags]                  busca_produtos
@@ -29,6 +31,7 @@ CT02: Pesquisa de um produto
     Então a pagina seleciona os TOP SELLERS da categoria 
     E um produto da linha "Blouse" deve ser mostrado na página
 
+robot -t "CT03: Cadastrar um Novo Usuario" "Suite\web_automathion_suite.robot"
 CT03: Cadastrar um Novo Usuario
     [Documentation]        Esse teste verifica o cadastro de um novo usuario 
     [Tags]                 cadastro_novo
@@ -38,6 +41,7 @@ CT03: Cadastrar um Novo Usuario
     E preencher os campos obrigatorios "First Name, Last Name, Password"
     E verificar se o novo usuario foi cadastrado com sucesso
 
+robot -t "CT04: Completar cadastro do Novo usuario com informações adicionais" "Suite\web_automathion_suite.robot"
 CT04: Completar cadastro do Novo usuario com informações adicionais 
     [Documentation]        Esse teste adiciona informações adicionais ao novo usuario 
     [Tags]                 informações_adicionais
@@ -48,6 +52,7 @@ CT04: Completar cadastro do Novo usuario com informações adicionais
      Então adicionar Endereço, Bairro, Cidade, Cep, Estado e Telefone
      E verificar se completou o cadastro do usuario
 
+robot -t "CT05: Deixa o cadastro do usuario incompleto e sinalizar erro" "Suite\web_automathion_suite.robot"
 CT05: Deixa o cadastro do usuario incompleto e sinalizar erro
     [Documentation]        Esse teste verifica o erro ao salvar cadastro sem preencher campos obrigatorios 
     [Tags]                 erro_cadastro
@@ -56,11 +61,12 @@ CT05: Deixa o cadastro do usuario incompleto e sinalizar erro
      E não preencher os dados obrigatorios corretamente 
      Então retorna o aviso para preencher campos obrigatorios
 
-# robot -t "Caso de Teste 06: Entrar em contato com o suporte do site Automation" -d results "tests\web_automathion_tests.robot"
+robot -t "CT06: Entrar em contato com o suporte do site Automation" "Suite\web_automathion_suite.robot"
 CT06: Entrar em contato com o suporte do site Automation
     [Documentation]        Esse teste verifica o contato com suporte 
     [Tags]                 contato_suporte 
      Dado que estou na home page do site www.automationpractice.pl/index.php
      Quando entro na opção de contatar o suporte do site
      E inserir emaiL, assunto e mensagem
-     Então enviar a mensagem ao suporte após apertar o botão "Send"
+     Então enviar a mensagem ao suporte após apertar o botão Send e confirma se foi enviado com sucesso 
+     
